@@ -8,10 +8,10 @@ urlpatterns = [
     path("course_detail/<int:id>/", course_detail, name="course_detail"),
     path('new_blog/<int:id>/', new_blog, name="new_blog"),
     path('new/', new, name="new"),
+    path('about/', about, name="about"),
     # path('course_01/', course_01, name="course_01"),
     # path('grid_news/', grid_news, name="grid_news"),
     # path('news_details/<int:id>/', news_details, name="news_details"),
-    # path('about/', about, name="about"),
     # path('contact/', contact, name="contact" )
 
     #     Dashboard urls start

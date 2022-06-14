@@ -62,6 +62,16 @@ def new(request):
 
     return render(request, "main/blog-large.html", ctx)
 
+
+def about(request):
+    techer =Teacher.objects.all()
+    ctx = {
+        'techer': techer
+    }
+
+    return render(request, 'main/about-us.html', ctx)
+
+
 # def course(request, id):
 #     course_detaols = Courses.objects.get(id=id)
 #     course = Courses.objects.all()
